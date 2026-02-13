@@ -63,3 +63,39 @@ Logistics Optimization: Focus on Store IDs showing consistent "Significant Delay
 Payment Strategy: With UPI and Cards holding a nearly equal share (~25% each), Blinkit should maintain robust integration for both to prevent checkout friction.
 
 Stock Management: Categories like 'Baby Care' and 'Snacks' show high sales volatility; implementing automated re-order triggers at the 74.75 average stock level is recommended.
+
+🧠 Technical Highlights: 
+
+DAX MeasuresTo provide deeper insights, I developed several custom DAX measures.
+
+Here are some of the core calculations used in this dashboard: 
+
+Total Sales: $$TotalSales = SUM('Blinkit_Data'[Sales])
+
+$$Average Sales per Outlet: $$AvgSales = DIVIDE([TotalSales],
+
+DISTINCTCOUNT('Blinkit_Data'[Outlet_Identifier]))$ * Top Rated Items (Conditional): > I used a combination of AVERAGE and RANKX to identify top-performing product categories based on customer feedback and sales volume.
+
+📈 Business Insights & Recommendations:
+
+Based on the dashboard analysis, here are the key takeaways for the Blinkit management team: 
+
+Outlet Size Performance: Medium-sized outlets are contributing to the highest percentage of total sales. Small outlets have the highest "Sales per Square Foot" efficiency, suggesting a model for rapid urban expansion. 
+
+Item Fat Content Analysis: There is a significant trend towards "Low Fat" items in Tier 1 cities, whereas "Regular" fat content items dominate Tier 3 sales. 
+
+Recommendation: Adjust inventory stocks based on city-tier health preferences to reduce wastage. 
+
+Item Type Dominance: Fruits and Vegetables show the highest volume but have lower margins compared to Household items. 
+
+Recommendation: Implement "Bundle Offers" (e.g., Household cleaner + Fresh produce) to increase the Average Order Value (AOV).Rating vs. Sales Correlation: Surprisingly, items with a rating between 3.5 and 4.2 show higher sales velocity than 5-star items, likely due to price sensitivity.
+
+🛠️ Data Cleaning Process:
+
+Before building the visuals, I performed the following Power Query steps: 
+
+Handling Nulls: Replaced missing values in Item_Weight using the average weight for that specific Item_Identifier.
+
+Standardizing Labels: Cleaned the Item_Fat_Content column (e.g., converted "LF" and "low fat" to "Low Fat" for consistency).
+
+Data Type Formatting: Ensured all currency and date fields were properly formatted for time-series analysis.
