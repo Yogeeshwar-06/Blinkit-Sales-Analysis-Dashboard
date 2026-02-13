@@ -2,8 +2,11 @@
 📌 Project Overview:<img width="1920" height="1080" alt="Screenshot (70)" src="https://github.com/user-attachments/assets/be4166f1-b0c7-45eb-97f1-8298d5359171" />
 <img width="1920" height="1080" alt="Screenshot (69)" src="https://github.com/user-attachments/assets/f9fbe469-0344-4147-8d57-e803fa89765e" />
 <img width="1920" height="1080" alt="Screenshot (68)" src="https://github.com/user-attachments/assets/b4c4ff84-f02c-4938-a6cb-1e629f4b13fe" />
+## 🌐 Live Interactive Dashboard
+[👉 Click here to view the live interactive Blinkit Ops Monitor](<iframe title="Salesbi" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMjc4NzFjZWQtOTQ0Yy00YTgzLWFkZDQtYTZkN2YxYTA1MTg0IiwidCI6ImUxNGU3M2ViLTUyNTEtNDM4OC04ZDY3LThmOWYyZTJkNWE0NiIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>)
 
 The Blinkit 360° Ops Monitor is an end-to-end Power BI solution designed to analyze delivery performance, sales trends, and operational bottlenecks. This dashboard transforms raw multi-source CSV/Excel data into actionable insights for Store and Category Managers to optimize fulfillment rates and rider allocation.
+
 🎯Key Business Questions Addressed:
 How does delivery delay correlate with specific stores or product categories?
 
